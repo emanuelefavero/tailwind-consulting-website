@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/fb89be9943.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="relative container mx-auto">
+    <!-- Header -->
+    <header class="container flex justify-between mb-20 px-4 py-2 pt-4">
+      <!-- Logo -->
+      <a href="#">
+        <img class="w-10 hover:opacity-90" src="img/logo.png" alt="logo" />
+      </a>
+
+      <!-- Header Menu -->
+      <nav class="flex items-center text-slate-700 text-xs font-medium">
+        <ul class="hidden sm:flex">
+          <li>
+            <a class="mr-6 hover:text-slate-600" href="#">About</a>
+            <a class="mr-6 hover:text-slate-600" href="#">Services</a>
+            <a class="mr-6 hover:text-slate-600" href="#">Products</a>
+          </li>
+        </ul>
+
+        <button
+          class="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-700 hover:text-white transition-all duration-200 ease-in-out"
+        >
+          Contact Us
+          <i
+            class="fa-solid fa-angles-right animation-move-right relative top-03px"
+          ></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section
+        class="hero px-4 mb-20 container flex-col justify-between items-center sm:flex sm:flex-row xl:justify-center"
+      >
+        <h1 class="font-bold text-5xl text-slate-800 max-w-sm mb-10 lg:mr-48">
+          World-class consulting firm <span class="text-blue-600">.</span>
+        </h1>
+        <div>
+          <p class="max-w-xs mb-10 text-s text-slate-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae,
+            adipisci ea consectetur deleniti velit necessitatibus voluptatem
+            ducimus neque eveniet.
+          </p>
+          <a class="font-bold text-s text-blue-600" href="#">See Services</a>
+        </div>
+      </section>
+
+      <!-- Dark Section 1 -->
+      <section class="container justify-between bg-black md:flex">
+        <div
+          class="flex justify-center items-center flex-col text-center py-20 px-20 w-full md:w-1/2"
+        >
+          <img
+            class="w-24 mb-3 hover:opacity-90"
+            src="img/logo.png"
+            alt="logo"
+          />
+          <h3 class="text-slate-200 font-bold text-2xl max-w-xs">
+            A new, groundbreaking consulting system
+          </h3>
+        </div>
+        <div class="w-full md:w-1/2 image"></div>
+      </section>
+      <div class="container h-16 bg-slate-200"></div>
+    </main>
+  </body>
+</html>

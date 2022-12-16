@@ -1,0 +1,16 @@
+{
+  "name": "tailwind-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "Emanuele Favero",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
