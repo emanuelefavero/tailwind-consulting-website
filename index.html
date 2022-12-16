@@ -20,22 +20,30 @@
 
       <!-- Header Menu -->
       <nav class="flex items-center text-slate-700 text-xs font-medium">
+        <a class="mr-6 hover:text-slate-600 sm:hidden" href="#about"
+          >About Us</a
+        >
         <ul class="hidden sm:flex">
           <li>
-            <a class="mr-6 hover:text-slate-600" href="#">About</a>
+            <a class="mr-6 hover:text-slate-600" href="#about">About Us</a>
+          </li>
+          <li>
             <a class="mr-6 hover:text-slate-600" href="#">Services</a>
+          </li>
+          <li>
             <a class="mr-6 hover:text-slate-600" href="#">Products</a>
           </li>
         </ul>
 
-        <button
+        <a
+          href="#contact"
           class="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-700 hover:text-white transition-all duration-200 ease-in-out"
         >
           Contact Us
           <i
             class="fa-solid fa-angles-right animation-move-right relative top-03px"
           ></i>
-        </button>
+        </a>
       </nav>
     </header>
 
@@ -80,6 +88,7 @@
 
       <!-- About Us Section -->
       <section
+        id="about"
         class="px-4 mt-40 mb-20 container w-full flex justify-center items-center"
       >
         <div>
@@ -93,46 +102,54 @@
           </p>
         </div>
       </section>
-    </main>
 
-    <!-- Call To Action -->
-    <section
-      class="bg-blue-600 px-4 py-20 w-full justify-center sm:flex sm:justify-between xl:px-48"
-    >
-      <form class="mb-10 max-w-sm mr-20 w-full sm:w-1/2">
-        <input
-          class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
-          type="email"
-          placeholder="Email"
-        />
-        <input
-          class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
-          type="text"
-          placeholder="Message"
-        />
-        <button
-          class="px-4 py-3 bg-blue-50 text-slate-700 text-xs rounded-full border-none shadow-md shadow-blue-700 hover:bg-white transition-all duration-200 ease-in-out"
-        >
-          Send Message
-          <i
-            class="fa-solid fa-angles-right animation-move-right relative top-03px"
-          ></i>
-        </button>
-      </form>
-      <div>
-        <h2 class="mb-4 text-blue-50 font-semibold text-3xl max-w-xs">
-          We are always ready to hear you 24/7
-        </h2>
-        <p class="text-blue-200 text-xs max-w-xs leading-5">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus,
-          fugiat nulla!
-        </p>
-      </div>
-    </section>
+      <!-- Call To Action -->
+      <section
+        id="contact"
+        class="bg-blue-600 px-4 py-20 mb-10 w-full justify-center sm:flex sm:justify-between xl:px-48"
+      >
+        <form class="mb-10 max-w-sm mr-20 w-full sm:w-1/2">
+          <input
+            class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
+            type="email"
+            placeholder="Email"
+          />
+          <input
+            class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
+            type="text"
+            placeholder="Message"
+          />
+          <button
+            class="px-4 py-3 bg-blue-50 text-slate-700 text-xs rounded-full border-none shadow-md shadow-blue-700 hover:bg-white transition-all duration-200 ease-in-out"
+          >
+            Send Message
+            <i
+              class="fa-solid fa-angles-right animation-move-right relative top-03px"
+            ></i>
+          </button>
+        </form>
+        <div>
+          <h2 class="mb-4 text-blue-50 font-semibold text-3xl max-w-xs">
+            We are always ready to hear you 24/7
+          </h2>
+          <p class="text-blue-200 text-xs max-w-xs leading-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Repellendus, fugiat nulla!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="px-4 py-7 text-slate-600 text-xs text-center">
+      <hr class="opacity-40 pb-7" />
+      <p>&copy; <span id="footerDate"></span> All Rights Reserved</p>
+    </footer>
+    <script>
+      document.getElementById('footerDate').innerHTML = new Date().getFullYear()
+    </script>
   </body>
 </html>
