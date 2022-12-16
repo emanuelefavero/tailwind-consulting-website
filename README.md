@@ -2,7 +2,7 @@
 
 This is a static website design for a consulting firm. It is built using just [Tailwind CSS](https://tailwindcss.com/)
 
-### Website
+### Live Website
 
 [https://emanuelefavero.github.io/tailwind-consulting-website/](https://emanuelefavero.github.io/tailwind-consulting-website/)
 
