@@ -17,3 +17,7 @@ To get started, clone this repository and run `npm install` to install the depen
 ## Development
 
 To start watching for tailwind changes, run `npm run watch`, then open live server or open the `index.html` file in your browser.
+
+## License
+
+- [MIT](LICENSE.md)
